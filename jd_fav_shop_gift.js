@@ -1,3 +1,7 @@
+/*
+cron:10 10 10 10 *
+*/
+
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M收藏有礼');
