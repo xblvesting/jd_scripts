@@ -1,3 +1,6 @@
+/*
+cron:7 7 7 7 7
+*/
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M关注有礼');
@@ -56,7 +59,7 @@ $.after = async function () {
         $.msg.push($.activityUrl);
     }
 }
-$.run({whitelist: ['1-20'], wait: [1000, 3000]}).catch(reason => $.log(reason))
+$.run({whitelist: ['1-30'], wait: [1000, 3000]}).catch(reason => $.log(reason))
 
 async function drawShopGift() {
     $.log('店铺信息', $.shopId, $.venderId, $.activityId)
