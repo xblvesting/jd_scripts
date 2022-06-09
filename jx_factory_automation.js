@@ -65,7 +65,7 @@ $.logic = async function () {
 };
 
 $.run({
-    wait: [2000, 3000]
+    wait: [1000, 2000]
 }).catch(
     reason => $.log(reason));
 
