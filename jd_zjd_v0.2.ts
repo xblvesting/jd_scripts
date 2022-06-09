@@ -9,7 +9,6 @@ import {zjdInit, zjdH5st} from "./utils/jd_zjd_tool.js";
 import {o2s, wait, requireConfig, getshareCodeHW} from "./TS_USER_AGENTS";
 import {SHA256} from "crypto-js";
 
-const $ = new Env('赚京豆1');
 let cookie: string = '', res: any = '', UserName: string
 let shareCodeSelf: Tuan[] = [], shareCode: Tuan[] = [], shareCodeHW: any = [], full: string[] = []
 
