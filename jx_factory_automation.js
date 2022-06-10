@@ -1,5 +1,8 @@
 //20 * * * * m_jx_factory_automation.js
 //问题反馈:https://t.me/Wall_E_Channel
+/*
+7 7 7 7 7
+*/
 const {Env} = require('./magic');
 const $ = new Env('M京喜工厂自动化');
 let commodityName = process.env.M_JX_FACTORY_COMMODITY

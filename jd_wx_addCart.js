@@ -1,4 +1,7 @@
 //问题反馈:https://t.me/Wall_E_Channel
+/*
+7 7 7 7 7
+*/
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M加购有礼');

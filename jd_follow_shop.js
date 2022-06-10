@@ -1,3 +1,6 @@
+/*
+7 7 7 7 7
+*/
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M关注有礼');

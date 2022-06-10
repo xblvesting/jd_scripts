@@ -4,7 +4,7 @@ https://lzkj-isv.isvjcloud.com/wxgame/activity/8530275?activityId=
 JD_CART_REMOVESIZE || 20; // 运行一次取消多全部已关注的商品。数字0表示不取关任何商品
 JD_CART_REMOVEALL || true;    //是否清空，如果为false，则上面设置了多少就只删除多少条
 RUN_CAR=ture 才运行脚本
-10 10 * * * 
+7 7 7 7 7
 ACTIVITY_ID || "";  //活动ID  以逗号分隔  111,22,33
 */
 const $ = new Env('加购物车抽奖');

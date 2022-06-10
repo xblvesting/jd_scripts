@@ -1,4 +1,7 @@
 //20 5,12,21 * * * m_jd_farm_automation.js
+/*
+7 7 7 7 7
+*/
 //问题反馈:https://t.me/Wall_E_Channel
 const {Env} = require('./magic');
 const $ = new Env('M农场自动化');
