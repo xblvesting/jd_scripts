@@ -1,7 +1,7 @@
 //20 * * * * m_jx_factory_automation.js
 //问题反馈:https://t.me/Wall_E_Channel
 const {Env} = require('./magic');
-const $ = new Env('M工厂自动化');
+const $ = new Env('M京喜工厂自动化');
 let commodityName = process.env.M_JX_FACTORY_COMMODITY
     ? process.env.M_JX_FACTORY_COMMODITY
     : '你还没设置要生产的变量M_JX_FACTORY_COMMODITY'
@@ -65,7 +65,7 @@ $.logic = async function () {
 };
 
 $.run({
-    wait: [1000, 2000]
+    wait: [2000, 3000]
 }).catch(
     reason => $.log(reason));
 

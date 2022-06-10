@@ -1,7 +1,3 @@
-/*
-cron:7 7 7 7 7
-*/
-
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M收藏有礼');
@@ -67,7 +63,7 @@ $.logic = async function () {
     }
     await DelShopFav()
 };
-$.run({wait: [300, 1000],whitelist: ['1-30']})
+$.run({wait: [300, 1000],whitelist: ['1-5']})
 .catch(reason => $.log(reason))
 
 async function GiveShopGift() {

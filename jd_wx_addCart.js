@@ -1,6 +1,3 @@
-/*
-cron:7 7 7 7 7
-*/
 //问题反馈:https://t.me/Wall_E_Channel
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
@@ -178,5 +175,5 @@ $.after = async function () {
         || ''}\n`);
     $.msg.push($.activityUrl)
 }
-$.run({whitelist: ['1-30'], wait: [2000, 4000]}).catch(
+$.run({whitelist: ['1-5'], wait: [3000, 5000]}).catch(
     reason => $.log(reason));
