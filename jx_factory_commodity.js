@@ -37,7 +37,7 @@ $.logic = async function () {
 $.run({
     bot: true,
     delimiter: '\n',
-    whitelist: [1]
+    whitelist: [1-30]
 }).catch(
     reason => $.log(reason));
 
