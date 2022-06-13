@@ -1,7 +1,5 @@
+// 7 7 7 7 7
 //问题反馈:https://t.me/Wall_E_Channel
-/*
-7 7 7 7 7
-*/
 let mode = __dirname.includes('magic')
 const {Env} = mode ? require('./magic') : require('./magic')
 const $ = new Env('M幸运抽奖');
@@ -52,7 +50,7 @@ $.logic = async function () {
             $.putMsg("抽奖次数为0")
         }
         while (activityContent.leftTime-- > 0) {
-            await $.wait(3000, 5000)
+            await $.wait(1000, 2000)
             let data = await $.api(
                 `wuxian/user/draw/${$.activityId}`,
                 {'id': $.activityId, 'token': $.Token, 'source': "01"});
@@ -226,6 +224,6 @@ $.after = async function () {
     $.msg.push(message)
     $.msg.push($.activityUrl);
 }
-$.run({whitelist: ['1-30'], wait: [3000, 5000]}).catch(
+$.run({whitelist: ['1-30'], wait: [1000, 2000]}).catch(
     reason => $.log(reason));
 
