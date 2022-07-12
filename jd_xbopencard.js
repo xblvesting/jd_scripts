@@ -8,7 +8,6 @@
 
 All变量适用
 ————————————————
-入口：[ 7.6~7.13 跨牌联合 夏日狂欢 (https://lzdz1-isv.isvjcloud.com/dingzhi/customized/common/activity/8938022?activityId=dzlhkkde95c4481a4859f30fa6f5868&shareUuid=5aad9c300c514d68b163a509c634d0fa)]
 
 请求太频繁会被黑ip
 过10分钟再执行
@@ -19,7 +18,7 @@ let guaopencard = "false"
 let guaopenwait = "0"
 let guaopencard_draw = "0"
 
-const $ = new Env('7.6~7.13 跨牌联合 夏日狂欢')
+const $ = new Env('xb开卡')
 const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 const notify = $.isNode() ? require('./sendNotify') : '';
 CryptoScripts()
